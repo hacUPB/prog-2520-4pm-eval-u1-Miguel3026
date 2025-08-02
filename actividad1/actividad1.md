@@ -59,13 +59,32 @@ $1*(2^3) + 0*(2^2) + 1*(2^1) + 1*(2^0) = 8 + 0 + 2 + 1 = 11$
 
 **1. Convierte el número decimal 22 a binario.**
 
-Paso 1: Dividir 22 entre 2. 
+**Paso 1:** Dividir 22 entre 2. 
 
-22/2 = 11 residuo 0
+22/2 = 11 residuo: 0
 
-Paso 2: Dividir 11 entre 2.
+**Paso 2:** Dividir 11 entre 2.
 
-11/2 = 5 residuo 1
+11/2 = 5 residuo: 1
+
+**Paso 3:** Dividir 5 entre 2.
+
+5/2 = 2 residuo: 1
+
+**Paso 4:** Dividir 2 entre 2.
+
+2/2 = 1 residuo: 0 
+
+**Paso 5:** dividir 1 entre 2.
+
+1/2 = 0 residuo: 1
+
+**Binario:** 1 0 1 1 0
+
+
+**2. ¿Cuál es el resultado en decimal del número binario 10110?**
+
+El número binario 10110 en decimal 
 
 
 
@@ -77,7 +96,7 @@ Paso 2: Dividir 11 entre 2.
 
 
 
-2. ¿Cuál es el resultado en decimal del número binario 10110?
+
 3. Escribe un programa en Python que convierta un número decimal introducido por el usuario a binario.
 
 2.2. Representación de Diferentes Tipos de Datos en el Mundo Digital
