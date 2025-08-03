@@ -84,20 +84,33 @@ $1*(2^3) + 0*(2^2) + 1*(2^1) + 1*(2^0) = 8 + 0 + 2 + 1 = 11$
 
 **2. ¿Cuál es el resultado en decimal del número binario 10110?**
 
-El número binario 10110 en decimal 
+El número binario 10110 se convierte a decimal de la siguiente manera:
+
+Descomponemos el número binario según las potencias de 2:
 
 
+1    0    1    1    0  
+
+2⁴  2³  2²  2¹  2⁰
+
+**Calculamos:**
+
+1 × 2⁴ = 16
+
+0 × 2³ = 0
+
+1 × 2² = 4
+
+1 × 2¹ = 2
+
+0 × 2⁰ = 0
+
+16 + 0 + 4 + 2 + 0 = 22
+
+Resultado: 22 en decimal. 
 
 
-
-
-
-
-
-
-
-
-3. Escribe un programa en Python que convierta un número decimal introducido por el usuario a binario.
+**3. Escribe un programa en Python que convierta un número decimal introducido por el usuario a binario.**
 
 2.2. Representación de Diferentes Tipos de Datos en el Mundo Digital
 Números enteros y decimales
@@ -135,13 +148,63 @@ Matriz de píxeles (3x3):
 
 ---
 
-### Ejercicios
+### **Ejercicios**
 
-1. ¿Qué número binario representa el carácter 'C' en ASCII?
-2. Convierte el número flotante 5.75 a binario (explica los pasos).
+**1. Qué número binario representa el carácter 'C' en ASCII?**
+
+Para convertir 67 a binario:
+
+67 ÷ 2 = 33, residuo 1
+
+33 ÷ 2 = 16, residuo 1
+
+16 ÷ 2 = 8, residuo 0
+
+8 ÷ 2 = 4, residuo 0
+
+4 ÷ 2 = 2, residuo 0
+
+2 ÷ 2 = 1, residuo 0
+
+1 ÷ 2 = 0, residuo 1
+
+Leyendo los residuos de abajo hacia arriba: 1000011
+
+ El número binario que representa el carácter 'C' en ASCII es 1000011 
+
+
+**2. Convierte el número flotante 5.75 a binario (explica los pasos)**
+
+Parte entera: 
+Convertimos 5 a binario dividiendo por 2 y guardando los residuos:
+
+5 ÷ 2 = 2, residuo 1
+
+2 ÷ 2 = 1, residuo 0
+
+1 ÷ 2 = 0, residuo 1
+
+Leyendo de abajo hacia arriba:
+5 = 101 (en binario)
+
+Parte fraccionaria: 0.75
+Multiplicamos por 2 y extraemos la parte entera en cada paso:
+
+0.75 × 2 = 1.5  parte entera: 1, fracción: 0.5
+
+0.5 × 2 = 1.0  parte entera: 1, fracción: 0.0
+
+Entonces:
+0.75 = .11 (en binario)
+
+ Resultado: 
+Juntamos las dos partes:
+5.75 = 101.11 
+
+
+
 
 ---
-
 ### 2.3. Almacenamiento Digital de Datos
 
 ### ¿Cómo se almacenan los datos?
@@ -156,7 +219,9 @@ Los datos se almacenan en la memoria y en dispositivos de almacenamiento como se
 |--bit--|--bit--|--bit--|--bit--|--bit--|--bit--|--bit--|--bit--|
 |------------------------- 1 byte ------------------------------|
 ​
-Ejemplo:
+
+**Ejemplo:**
+
 Guardar la letra 'A' en memoria:
 'A' = 65 = 01000001 (en binario) → almacenado en 1 byte.
 Ejercicios
@@ -190,8 +255,38 @@ Colores en computadoras suelen representarse en formato RGB, usando valores hexa
 
 ### Ejercicios
 
-1. Convierte el número decimal 255 a hexadecimal.
-2. ¿Cuál es el valor hexadecimal de la secuencia binaria 11010110?
+**1. Convierte el número decimal 255 a hexadecimal.**
+
+**Paso 1:** Divide entre 16
+
+255 ÷ 16 = 15, residuo 15
+
+ 
+**Paso 2:** Representa los valores en hexadecimal.
+El cociente 15 en hexadecimal es F
+
+En hexadecimal, los números del 10 al 15 se representan con letras:
+
+Decimal	Hexadecimal
+
+10  A
+
+11 	B
+
+12  C
+
+13 	D
+
+14 	E
+
+15 	F
+
+El cociente 15 en hexadecimal es F
+
+El residuo 15 también es F
+
+
+
 
 ---
 
@@ -204,9 +299,19 @@ Colores en computadoras suelen representarse en formato RGB, usando valores hexa
      |-- Almacenamiento (bits, bytes, palabras)
      |-- Codificación (ASCII, Unicode, RGB)
      
-      4. Ejercicios Finales de Repaso
+     
+ **4. Ejercicios Finales de Repaso**
 
-1. Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.
-2. Convierte el número binario 10011011 a decimal y a hexadecimal.
-3. Investiga y describe cómo se representa una imagen en formato PNG en el disco.
-4. Analiza la siguiente situación: ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?
+**1. Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.**
+
+
+
+**2. Convierte el número binario 10011011 a decimal y a hexadecimal.**
+
+
+
+**3. Investiga y describe cómo se representa una imagen en formato PNG en el disco.**
+
+
+
+**4. Analiza la siguiente situación: ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?**
