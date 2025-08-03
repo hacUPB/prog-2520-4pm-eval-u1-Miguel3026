@@ -112,13 +112,8 @@ Resultado: 22 en decimal.
 
 **3. Escribe un programa en Python que convierta un número decimal introducido por el usuario a binario.**
 
-2.2. Representación de Diferentes Tipos de Datos en el Mundo Digital
-Números enteros y decimales
-Enteros: Se representan directamente en binario.
-Decimales (punto flotante): Se representan usando una notación especial (IEEE 754), que usa parte de los bits para la parte entera, otra para la fracción y otra para el signo.
-Diagrama conceptual:
-[Signo] [Exponente] [Mantisa]
-  1 bit    8 bits      23 bits   (en un float de 32 bits)
+
+
 
   ### Caracteres (ASCII, Unicode)
 
@@ -302,16 +297,61 @@ El residuo 15 también es F
      
  **4. Ejercicios Finales de Repaso**
 
-**1. Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.**
+**1.Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.**
+
+Los computadores usan binario ya que es la forma más directa y eficiente de representar, manipular la información. Todo eso se traduce a combinaciones de 1 y 0 que las máquinas puedan entender.
 
 
 
 **2. Convierte el número binario 10011011 a decimal y a hexadecimal.**
 
+**Decimal**
+Descomponemos el binario según las potencias de 2:
+
+1   0   0   1   1   0   1     1  
+128  64   32   16   8    4    2    1
+
+Multiplicamos solo donde hay 1:
+
+1 × 128 = 128
+
+0 × 64 = 0
+
+0 × 32 = 0
+
+1 × 16 = 16
+
+1 × 8 = 8
+
+0 × 4 = 0
+
+1 × 2 = 2
+
+1 × 1 = 1
+
+total: 128 + 16 + 8 + 2 + 1 = 155
 
 
 **3. Investiga y describe cómo se representa una imagen en formato PNG en el disco.**
 
+Una imagen en formato PNG se guarda en el disco como un archivo estructurado por bloques llamados chunks. Cada uno tiene una función específica.
+
+**Firma PNG:** Los primeros 8 bytes identifican el archivo como PNG.
+
+**Encabezado:** Define el ancho, alto, tipo de color (RGB, escala de grises, etc.) y profundidad de color.
+
+**IDAT:** Contiene los datos de imagen, es decir, los colores de los píxeles, que están comprimidos sin pérdida usando el algoritmo Deflate. Puede haber varios bloques IDAT.
+
+**Bloques opcionales:** Como la transparencia (tRNS), paleta de colores (PLTE), o texto descriptivo.
+
+**IEND:** Señala el final del archivo.
+
+Los píxeles se representan como números que indican la intensidad de colores (como rojo, verde, azul y a veces transparencia). Todo esto hace que el archivo sea compacto, sin pérdida de calidad y mucho mas compatible.
+
 
 
 **4. Analiza la siguiente situación: ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?**
+
+Un byte es una unidad de almacenamiento de 8 bits que puede representar valores enteros entre 0 y 255. Si intentas almacenar un número mayor, como 300, en un solo byte, este no cabe porque excede el límite máximo. En lenguajes de bajo nivel, esto puede causar un desbordamiento, donde el número se recorta y se pierde parte de la información.
+
+Un solo byte no puede almacenar números mayores a 255. Python lo permite en variables normales, pero si se trabaja con datos binarios, necesitamos dividir el número en varios bytes para representarlo correctamente.
