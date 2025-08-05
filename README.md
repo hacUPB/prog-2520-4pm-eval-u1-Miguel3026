@@ -4,4 +4,7 @@
 Nombre: Miguel Angel Mejia Loaiza 
 ID:  000257893
 ## Descripción del repositorio
-Reemplace estas líneas por la descripción de su repositorio
+Este repositorio contiene el material de la unidad donde exploramos los fundamentos de la arquitectura del computador digital moderno. Aquí abordamos los componentes principales de una computadora y cómo funcionan internamente. También estudiamos los sistemas numéricos y cómo se representa la información digitalmente, lo cual es clave para entender cómo se procesa la información en un sistema computacional.
+
+Además, incluye una sección dedicada al desarrollo de algoritmos, donde aprendemos a analizar problemas, diseñar soluciones con pseudocódigo y diagramas de flujo, y luego traducir esas soluciones a código real. Al finalizar esta unidad, somos capaces de comprender el funcionamiento básico de los sistemas computacionales y aplicar técnicas de programación estructurada para resolver problemas de forma más eficiente.
+
