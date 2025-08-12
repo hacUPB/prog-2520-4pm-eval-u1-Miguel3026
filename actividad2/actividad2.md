@@ -36,7 +36,7 @@ Investiga cuáles son los símbolos que se utilizan para representar cada operac
 |-----------------------|---------------------|-------------------------------------------|
 | Terminal              | Óvalo    | Inicio o fin del algoritmo                |
 | Proceso               | Rectángulo          | Acción u operación                        |
-| Decisión              | Diamante (rombo)    | Punto de bifurcación (condición)          |
+| Decisión              | Diamante (rombo)    | Condición          |
 | Entrada/Salida        | Paralelogramo       | Input u output de datos                   |
 | Línea de flujo        | Flechas             | Indicar secuencia del flujo               |
 | Proceso predefinido   | Rectángulo doble    | Subproceso definido en otro lugar         |
