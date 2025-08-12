@@ -44,3 +44,42 @@ Investiga cuáles son los símbolos que se utilizan para representar cada operac
 | Comentario  | Rectángulo abierto  | Información adicional                     |
 
 
+## Ejercicio 2
+
+Analicemos el siguiente problema y representemos su solución mediante un algoritmo secuencial.
+
+- Construye un algoritmo que, al recibir como datos **el ID** del empleado y los seis primeros sueldos del año, calcule el ingreso total semestral y el promedio mensual, e imprima el ID del empleado, el ingreso total y el promedio mensual.
+
+**R/**
+
+ ## pseudocódigo
+ ```
+ INICIO
+    LEER ID
+    LEER sueldo1, sueldo2, sueldo3, sueldo4, sueldo5, sueldo6
+    
+    total_semestral ← sueldo1 + sueldo2 + sueldo3 + sueldo4 + sueldo5 + sueldo6
+    promedio_mensual ← total_semestral / 6
+    
+    IMPRIMIR "ID del empleado:", ID
+    IMPRIMIR "Ingreso total semestral:", total_semestral
+    IMPRIMIR "Promedio mensual:", promedio_mensual
+FIN
+ ```
+
+![alt text](diagrama_flujo_sueldos.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
