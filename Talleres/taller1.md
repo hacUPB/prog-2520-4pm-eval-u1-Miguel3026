@@ -11,9 +11,7 @@ Cada problema deberá resolverse empleando estructuras de control como condicion
 
 **Ejercicios con condicionales:**
 
-**Control de temperatura del motor**
-    
-- Durante una inspección de rutina, se mide la temperatura de un motor de turbina. Si la temperatura es mayor a un valor crítico, se debe indicar "Peligro: sobrecalentamiento". Si está dentro del rango seguro, indicar "Operación normal". Si es demasiado baja, indicar "Motor frío – Calentar antes de operar".
+
 
 
 # Ejercicio
@@ -54,9 +52,7 @@ Fin
 
 **Ejercicios con bucles:**
 
- **Registro de altitudes de vuelo**
-    
-- Un sistema debe registrar la altitud de vuelo cada 10 minutos durante una hora y mostrar todas las mediciones al final.
+
 
 # Ejercicio
  
@@ -97,30 +93,24 @@ Fin
     
 - Durante el abordaje, un sistema cuenta a los pasajeros que ingresan. Si el número total supera la capacidad máxima, el sistema debe detener el conteo y mostrar un mensaje de alerta.
 
+| Tipo                   | Nombre             | Descripción                                                                 |
+|------------------------|--------------------|-----------------------------------------------------------------------------|
+| Variable de entrada    | pasajeros_ingreso  | Número de pasajeros que ingresan en cada evento de abordaje                 |
+| Variable intermedia    | total_pasajeros    | Contador acumulado de pasajeros que han ingresado                           |
+| Variable de salida     | mensaje_alerta     | Mensaje mostrado cuando se supera la capacidad máxima permitida             |
+| Constante              | capacidad_maxima   | Número máximo de pasajeros permitido en el sistema                          |
+| Constante              | estado_sistema     | Indica si el conteo continúa o se detiene según la capacidad alcanzada      |
+
 
 ## Pseudocódigo
 ```
-Inicio
-    Definir capacidadMaxima, pasajeros, totalPasajeros Como Entero
-
-    Escribir "Ingrese la capacidad máxima del vehículo:"
-    Leer capacidadMaxima
-
-    totalPasajeros <- 0
-
-    Repetir
-        Escribir "Ingrese la cantidad de pasajeros que suben:"
-        Leer pasajeros
-
-        totalPasajeros <- totalPasajeros + pasajeros
-
-        Si totalPasajeros > capacidadMaxima Entonces
-            Escribir "¡Alerta! Capacidad máxima superada. Deteniendo conteo."
-        FinSi
-
-    Hasta Que totalPasajeros > capacidadMaxima
-
-Fin
+i=0 
+mientras i<180
+Leer dato 
+cantidad_pasajeros[i] = dato 
+i=i+1
+Fin mientras 
 ```
+ 
 
 
