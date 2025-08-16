@@ -88,7 +88,7 @@ Fin
  
 
 **Ejercicios con bucle y condicionales:**
-
+# Ejercicio
 **Simulación de conteo de pasajeros:**
     
 - Durante el abordaje, un sistema cuenta a los pasajeros que ingresan. Si el número total supera la capacidad máxima, el sistema debe detener el conteo y mostrar un mensaje de alerta.
